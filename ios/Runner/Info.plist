@@ -45,5 +45,17 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+
+	<!-- ✅ Konum izni açıklamaları -->
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Harita üzerinde konumunuzu gösterebilmek için konum iznine ihtiyacımız var.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Konum hizmetleri uygulama çalışırken daha iyi hizmet sunabilmek için kullanılır.</string>
+
+	<!-- ✅ Google Maps API anahtarını buraya ekle -->
+	<key>io.flutter.embedded_views_preview</key>
+	<true/>
+	<key>GMSApiKey</key>
+	<string>AIzaSyCMT0BK5L-6ZppbYY6trLWNlEODaRCEVmo</string>
 </dict>
 </plist>
