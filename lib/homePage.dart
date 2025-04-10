@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:permission_handler/permission_handler.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -40,7 +41,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          icon: const Icon(Icons.menu),
+          icon: const FaIcon(FontAwesomeIcons.bars), // Menü ikonu
           onPressed: () {
             ScaffoldMessenger.of(context).showSnackBar(
               const SnackBar(content: Text('Menü tıklandı!')),
@@ -51,7 +52,7 @@ class _HomePageState extends State<HomePage> {
         centerTitle: true,
         actions: [
           IconButton(
-            icon: const Icon(Icons.messenger),
+            icon: const FaIcon(FontAwesomeIcons.solidMessage), // Mesaj ikonu
             onPressed: () {
               ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(content: Text('Mesajlar açıldı!')),
@@ -76,23 +77,23 @@ class _HomePageState extends State<HomePage> {
         type: BottomNavigationBarType.fixed,
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: FaIcon(FontAwesomeIcons.house), // Ana Sayfa ikonu
             label: 'Ana Sayfa',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.store),
+            icon: FaIcon(FontAwesomeIcons.store), // Mağaza ikonu
             label: 'Mağaza',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.camera, size: 40),
+            icon: FaIcon(FontAwesomeIcons.camera, size: 40), // FotoBIOS ikonu
             label: 'Fotoğraf',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.heart_broken_outlined),
+            icon: FaIcon(FontAwesomeIcons.solidHeart), // Beğeniler ikonu
             label: 'Beğeniler',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
+            icon: FaIcon(FontAwesomeIcons.solidUser), // Profil ikonu
             label: 'Profil',
           ),
         ],
