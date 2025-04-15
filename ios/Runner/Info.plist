@@ -4,6 +4,10 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Yakındaki gönderileri haritada göstermek için konumunuza ihtiyaç var.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Uygulama arka plandayken de yakınınızdaki gönderileri bulmak için konumunuza ihtiyaç var (Bu gerekmeyebilir, sadece örnektir).</string>
 	<key>CFBundleDisplayName</key>
 	<string>Here</string>
 	<key>CFBundleExecutable</key>
